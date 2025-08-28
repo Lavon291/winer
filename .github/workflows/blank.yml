@@ -19,7 +19,6 @@ jobs:
     - name: Setup Chrome Remote Desktop
       run: |
         & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AVMBsJiBNlY4Dg2A29GWL72iVe19ebLKoku1xZKYQuXLiaZ_0xafl79-8R9B0mIsKw75Ug" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=111111
-		
     - name: 30초 대기
       run: |
         Start-Sleep -Seconds 3600
